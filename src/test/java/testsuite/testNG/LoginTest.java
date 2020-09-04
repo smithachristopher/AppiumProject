@@ -7,13 +7,14 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
-public class Test1 extends BaseClass {
 
-    static AppiumDriver<MobileElement> driver;;
+public class LoginTest extends BaseClass {
 
-    @Test(priority = 1)
-    public void loginTest() {
-        WebDriverWait wait = new WebDriverWait(driver, 20);
+        static AppiumDriver<MobileElement> driver;;
+
+        @Test(priority = 1)
+        public void loginTest() {
+            WebDriverWait wait = new WebDriverWait(driver, 20);
 
             driver.get("https://app.mycraftnote.de/");
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("email")))
@@ -22,8 +23,7 @@ public class Test1 extends BaseClass {
             driver.findElementById("password").sendKeys("Automation@2020");
             driver.findElementById("login").click();
 
+        }
+
     }
-
-}
-
 
