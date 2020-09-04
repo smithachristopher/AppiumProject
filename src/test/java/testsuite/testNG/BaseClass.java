@@ -29,7 +29,6 @@ import java.util.concurrent.TimeUnit;
         public void setup()throws MalformedURLException {
             DesiredCapabilities cap =new DesiredCapabilities();
             cap.setCapability("deviceName","sdk_gphone_x86");
-          //  cap.setCapability("udid","192.168.2.111:5555");
             cap.setCapability("platformName","Android");
             cap.setCapability("platformVersion","11.0");
             cap.setCapability("automationName","uiautomator2");
@@ -49,25 +48,11 @@ import java.util.concurrent.TimeUnit;
 
             String sessionId =driver.getSessionId().toString();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-
-            loginTest();
         }
 
         @AfterTest
         public void quitDriver(){
             driver.quit();
-        }
-
-        public void loginTest() {
-            WebDriverWait wait = new WebDriverWait(driver, 20);
-
-            driver.get("https://app.mycraftnote.de/");
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("email")))
-                    .sendKeys("qa-challenge@craftnote.de");
-            driver.findElementById("email").sendKeys("qa-challenge@craftnote.de");
-            driver.findElementById("password").sendKeys("Automation@2020");
-            driver.findElementById("login").click();
-
         }
     }
 

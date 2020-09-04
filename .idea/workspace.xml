@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="518280b7-909e-4e41-84b6-eebf32d5b687" name="Default Changelist" comment="" />
+    <list default="true" id="518280b7-909e-4e41-84b6-eebf32d5b687" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testsuite/testNG/BaseClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testsuite/testNG/BaseClass.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/testsuite/testNG/BaseClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+            <state relative-caret-position="283">
+              <caret line="36" column="55" lean-forward="true" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2040#2041#0" expanded="true" />
@@ -38,7 +41,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testsuite/testNG/Test1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
+            <state relative-caret-position="272">
               <caret line="21" column="10" selection-start-line="14" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -55,6 +58,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -76,8 +82,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="246" />
-    <option name="width" value="892" />
+    <option name="x" value="247" />
+    <option name="width" value="1125" />
     <option name="height" value="728" />
   </component>
   <component name="ProjectView">
@@ -85,6 +91,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -140,8 +148,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -241,10 +247,10 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="246" y="0" width="892" height="728" extended-state="0" />
+    <frame x="247" y="0" width="1125" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30528846" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24413146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -311,7 +317,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testsuite/testNG/Test1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
+        <state relative-caret-position="272">
           <caret line="21" column="10" selection-start-line="14" selection-start-column="4" selection-end-line="24" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -321,8 +327,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testsuite/testNG/BaseClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="28" selection-end-column="3" />
+        <state relative-caret-position="283">
+          <caret line="36" column="55" lean-forward="true" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2040#2041#0" expanded="true" />
