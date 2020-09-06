@@ -2,6 +2,7 @@ package testsuite.testNG;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
+import io.appium.java_client.android.AndroidDriver;
 import javafx.scene.layout.Priority;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -22,17 +23,17 @@ import java.util.concurrent.TimeUnit;
 
     public class  BaseClass {
 
-        static AppiumDriver<MobileElement> driver;;
+        static AppiumDriver<MobileElement> driver;
 
         @BeforeTest
 
         public void setup()throws MalformedURLException {
             DesiredCapabilities cap =new DesiredCapabilities();
             cap.setCapability("deviceName","sdk_gphone_x86");
+            //  cap.setCapability("udid","192.168.2.111:5555");
             cap.setCapability("platformName","Android");
             cap.setCapability("platformVersion","11.0");
-            cap.setCapability("automationName","uiautomator2");
-
+            cap.setCapability("automationName","appium");
             cap.setCapability("noReset","true");
             //  cap.setCapability("skipUnlock","true");
             //  cap.setCapability("app","getAbsolutePath()");
@@ -40,19 +41,19 @@ import java.util.concurrent.TimeUnit;
             //application activity - install apk on playstore
             cap.setCapability("appPackage","com.android.chrome");
             cap.setCapability("appActivity","com.google.android.apps.chrome.Main");
-
             URL url = new URL("http://127.0.0.1:4723/wd/hub");
-
-            driver = new AppiumDriver<MobileElement>(url , cap);
+            driver = new AndroidDriver<MobileElement>(url , cap);
             System.out.println("Application started");
 
             String sessionId =driver.getSessionId().toString();
-            driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+
+
         }
 
         @AfterTest
         public void quitDriver(){
             driver.quit();
-        }
+       }
     }
 
